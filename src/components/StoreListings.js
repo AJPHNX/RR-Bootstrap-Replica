@@ -9,22 +9,28 @@ import {Container,Row,Col,Image,Button} from 'react-bootstrap'
             //  borderRadius: '15%',
             width: '300px',
             height: '150px',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginBottom:'2rem'
+        },
+        h2:{
+            display:'block', 
+            position:'relative',
+            margin: 'auto'
         }
+
     }
     return(
        
-        <div style={{display: "flex",position: "relative", margin:"auto", alignContent:'center', textAlign:'center'}}>
-
-            <div style={{display:'block', flexDirection:"column", paddingBottom:'35rem'}}>
-                <h2 style={{position:"relative", margin:'auto', paddingBottom:"5px"}} >Browse stores in Houston</h2>
+        <div style={{display:"block", margin: "auto" }}>
+            <div style={styles.h2}>
+                <h2> Browse stores in Houston</h2>
             </div>
-
-            <div style={{display:'inline-flex', flexDirection:"column"}}></div>
-            <Container style={{ marginTop: "40px", textAlign: "center", dropShadow:'', display: "flex" }}>
+            <Container style={{ marginTop: "40px", textAlign: "center", dropShadow:'', display: "inline-flex"}}>
+               
                 <Row style={{ borderBottom: "1px solid #E8E9EB", flexDirection: "row", justifyContent: "space-evenly"}} >
+                    
+                    <Col sm="1"></Col>
                     <Row>
-                         {/* style= {styles.indvStoreCont}> */}
                         <Button variant="outline-secondary" size="md" style={styles.indvStoreCont}>
                         <Col xs=".5" >
                             <Image src="https://d2d8wwwkmhfcva.cloudfront.net/96x96/d2lnr5mha7bycj.cloudfront.net/warehouse/logo/12/2774c343-1319-4720-a54f-0c46e93f956c.png" roundedCircle />
